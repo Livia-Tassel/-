@@ -1,0 +1,1763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object class="org.opensourcephysics.cabrillo.tracker.TrackerPanel">
+    <property name="semantic_version" type="string">5.1.3</property>
+    <property name="width" type="double">1918.0</property>
+    <property name="height" type="double">1080.0</property>
+    <property name="magnification" type="double">0.35355339059327373</property>
+    <property name="center_x" type="int">350</property>
+    <property name="center_y" type="int">273</property>
+    <property name="videoclip" type="object">
+    <object class="org.opensourcephysics.media.core.VideoClip">
+        <property name="video" type="object">
+        <object class="org.opensourcephysics.media.xuggle.XuggleVideo">
+            <property name="path" type="string">77.mp4</property>
+        </object>
+        </property>
+        <property name="video_framecount" type="int">1162</property>
+        <property name="startframe" type="int">129</property>
+        <property name="stepsize" type="int">1</property>
+        <property name="stepcount" type="int">335</property>
+        <property name="starttime" type="double">0.0</property>
+        <property name="readout" type="string">frame</property>
+        <property name="playallsteps" type="boolean">true</property>
+    </object>
+    </property>
+    <property name="clipcontrol" type="object">
+    <object class="org.opensourcephysics.media.core.StepperClipControl">
+        <property name="rate" type="double">1.0</property>
+        <property name="delta_t" type="double">33.333333333333336</property>
+        <property name="frame" type="int">462</property>
+    </object>
+    </property>
+    <property name="coords" type="object">
+    <object class="org.opensourcephysics.media.core.ImageCoordSystem">
+        <property name="fixedorigin" type="boolean">true</property>
+        <property name="fixedangle" type="boolean">true</property>
+        <property name="fixedscale" type="boolean">true</property>
+        <property name="locked" type="boolean">false</property>
+        <property name="framedata" type="array" class="[Lorg.opensourcephysics.media.core.ImageCoordSystem$FrameData;">
+            <property name="[0]" type="object">
+            <object class="org.opensourcephysics.media.core.ImageCoordSystem$FrameData">
+                <property name="xorigin" type="double">903.0</property>
+                <property name="yorigin" type="double">297.0</property>
+                <property name="angle" type="double">-90.0</property>
+                <property name="xscale" type="double">470169.7630682809</property>
+                <property name="yscale" type="double">470169.7630682809</property>
+            </object>
+            </property>
+        </property>
+    </object>
+    </property>
+    <property name="length_unit" type="string">m</property>
+    <property name="mass_unit" type="string">kg</property>
+    <property name="units_visible" type="boolean">true</property>
+    <property name="tracks" type="collection" class="java.util.ArrayList">
+        <property name="item" type="object">
+        <object class="org.opensourcephysics.cabrillo.tracker.CoordAxes">
+            <property name="name" type="string">轴</property>
+            <property name="color" type="object">
+            <object class="java.awt.Color">
+                <property name="red" type="int">200</property>
+                <property name="green" type="int">0</property>
+                <property name="blue" type="int">200</property>
+                <property name="alpha" type="int">255</property>
+            </object>
+            </property>
+            <property name="footprint" type="string">Footprint.BoldSimpleAxes</property>
+            <property name="visible" type="boolean">true</property>
+            <property name="trail" type="boolean">false</property>
+        </object>
+        </property>
+        <property name="item" type="object">
+        <object class="org.opensourcephysics.cabrillo.tracker.TapeMeasure">
+            <property name="name" type="string">定标尺 A</property>
+            <property name="color" type="object">
+            <object class="java.awt.Color">
+                <property name="red" type="int">51</property>
+                <property name="green" type="int">255</property>
+                <property name="blue" type="int">51</property>
+                <property name="alpha" type="int">255</property>
+            </object>
+            </property>
+            <property name="footprint" type="string">Footprint.DoubleArrow</property>
+            <property name="visible" type="boolean">true</property>
+            <property name="trail" type="boolean">false</property>
+            <property name="fixedtape" type="boolean">true</property>
+            <property name="fixedlength" type="boolean">true</property>
+            <property name="readonly" type="boolean">false</property>
+            <property name="stickmode" type="boolean">false</property>
+            <property name="framedata" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TapeMeasure$FrameData;">
+                <property name="[0]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.TapeMeasure$FrameData">
+                    <property name="x1" type="double">629.7050938337802</property>
+                    <property name="y1" type="double">148.79356568364605</property>
+                    <property name="x2" type="double">630.0887573964498</property>
+                    <property name="y2" type="double">901.0650887573966</property>
+                </object>
+                </property>
+            </property>
+            <property name="worldlengths" type="array" class="[Ljava.lang.Double;">
+                <property name="[0]" type="double">755.469387428287</property>
+            </property>
+        </object>
+        </property>
+        <property name="item" type="object">
+        <object class="org.opensourcephysics.cabrillo.tracker.PointMass">
+            <property name="mass" type="double">1.0</property>
+            <property name="name" type="string">质量 A</property>
+            <property name="description" type="string">83</property>
+            <property name="color" type="object">
+            <object class="java.awt.Color">
+                <property name="red" type="int">255</property>
+                <property name="green" type="int">0</property>
+                <property name="blue" type="int">0</property>
+                <property name="alpha" type="int">255</property>
+            </object>
+            </property>
+            <property name="footprint" type="string">Footprint.Diamond</property>
+            <property name="visible" type="boolean">true</property>
+            <property name="trail" type="boolean">true</property>
+            <property name="framedata" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.PointMass$FrameData;">
+                <property name="[348]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">936.143451143451</property>
+                    <property name="y" type="double">266.07068607068607</property>
+                </object>
+                </property>
+                <property name="[374]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">933.2195602231703</property>
+                    <property name="y" type="double">273.45585822120125</property>
+                </object>
+                </property>
+                <property name="[392]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">933.2195602231703</property>
+                    <property name="y" type="double">284.16803413193315</property>
+                </object>
+                </property>
+                <property name="[413]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">933.0099228224917</property>
+                    <property name="y" type="double">292.1278941565601</property>
+                </object>
+                </property>
+                <property name="[439]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">934.9533255542591</property>
+                    <property name="y" type="double">303.3955659276546</property>
+                </object>
+                </property>
+                <property name="[464]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">933.8981288981288</property>
+                    <property name="y" type="double">314.9064449064449</property>
+                </object>
+                </property>
+                <property name="[487]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">932.75</property>
+                    <property name="y" type="double">325.75</property>
+                </object>
+                </property>
+                <property name="[515]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">936.9854469854469</property>
+                    <property name="y" type="double">337.64033264033264</property>
+                </object>
+                </property>
+                <property name="[544]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">942.037422037422</property>
+                    <property name="y" type="double">350.83160083160084</property>
+                </object>
+                </property>
+                <property name="[565]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">945.9667359667359</property>
+                    <property name="y" type="double">358.6902286902287</property>
+                </object>
+                </property>
+                <property name="[585]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">948.4927234927235</property>
+                    <property name="y" type="double">367.3908523908524</property>
+                </object>
+                </property>
+                <property name="[607]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">948.4927234927234</property>
+                    <property name="y" type="double">376.65280665280665</property>
+                </object>
+                </property>
+                <property name="[627]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">950.4573804573804</property>
+                    <property name="y" type="double">385.6340956340956</property>
+                </object>
+                </property>
+                <property name="[645]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">950.1767151767151</property>
+                    <property name="y" type="double">393.4927234927235</property>
+                </object>
+                </property>
+                <property name="[666]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">950.0</property>
+                    <property name="y" type="double">402.75</property>
+                </object>
+                </property>
+                <property name="[687]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">950.25</property>
+                    <property name="y" type="double">410.5</property>
+                </object>
+                </property>
+                <property name="[702]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">950.25</property>
+                    <property name="y" type="double">418.25</property>
+                </object>
+                </property>
+                <property name="[726]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">950.1882468489114</property>
+                    <property name="y" type="double">428.71173678179736</property>
+                </object>
+                </property>
+                <property name="[745]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">950.6725468577729</property>
+                    <property name="y" type="double">433.82579933847853</property>
+                </object>
+                </property>
+                <property name="[764]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">948.0926130099228</property>
+                    <property name="y" type="double">442.5578831312018</property>
+                </object>
+                </property>
+                <property name="[786]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">950.89540022917</property>
+                    <property name="y" type="double">451.5174332951383</property>
+                </object>
+                </property>
+                <property name="[806]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">952.8400720248812</property>
+                    <property name="y" type="double">458.58896709772466</property>
+                </object>
+                </property>
+                <property name="[817]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">955.0386466384716</property>
+                    <property name="y" type="double">464.1621700452093</property>
+                </object>
+                </property>
+            </property>
+            <property name="keyFrames" type="array" class="[I">
+                <property name="array" type="string">{348,374,392,413,439,464,487,515,544,565,585,607,627,645,666,687,702,726,745,764,786,806,817}</property>
+            </property>
+        </object>
+        </property>
+        <property name="item" type="object">
+        <object class="org.opensourcephysics.cabrillo.tracker.PointMass">
+            <property name="mass" type="double">1.0</property>
+            <property name="name" type="string">质量 B</property>
+            <property name="description" type="string">175</property>
+            <property name="color" type="object">
+            <object class="java.awt.Color">
+                <property name="red" type="int">0</property>
+                <property name="green" type="int">255</property>
+                <property name="blue" type="int">255</property>
+                <property name="alpha" type="int">255</property>
+            </object>
+            </property>
+            <property name="footprint" type="string">Footprint.Diamond</property>
+            <property name="visible" type="boolean">true</property>
+            <property name="trail" type="boolean">true</property>
+            <property name="framedata" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.PointMass$FrameData;">
+                <property name="[144]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1027.8970588235293</property>
+                    <property name="y" type="double">131.8235294117647</property>
+                </object>
+                </property>
+                <property name="[153]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1029.485294117647</property>
+                    <property name="y" type="double">150.88235294117646</property>
+                </object>
+                </property>
+                <property name="[161]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1030.2794117647059</property>
+                    <property name="y" type="double">164.38235294117646</property>
+                </object>
+                </property>
+                <property name="[168]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1029.485294117647</property>
+                    <property name="y" type="double">175.5</property>
+                </object>
+                </property>
+                <property name="[175]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1027.8970588235293</property>
+                    <property name="y" type="double">192.97058823529412</property>
+                </object>
+                </property>
+                <property name="[182]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1027.1029411764705</property>
+                    <property name="y" type="double">206.47058823529412</property>
+                </object>
+                </property>
+                <property name="[190]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1028.6911764705883</property>
+                    <property name="y" type="double">219.97058823529412</property>
+                </object>
+                </property>
+                <property name="[197]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1024.7205882352941</property>
+                    <property name="y" type="double">235.05882352941177</property>
+                </object>
+                </property>
+                <property name="[204]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1024.7205882352941</property>
+                    <property name="y" type="double">246.97058823529412</property>
+                </object>
+                </property>
+                <property name="[211]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1027.1029411764705</property>
+                    <property name="y" type="double">262.05882352941177</property>
+                </object>
+                </property>
+                <property name="[218]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1023.9264705882351</property>
+                    <property name="y" type="double">273.9705882352941</property>
+                </object>
+                </property>
+                <property name="[225]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1026.3088235294117</property>
+                    <property name="y" type="double">289.05882352941177</property>
+                </object>
+                </property>
+                <property name="[231]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1023.9264705882352</property>
+                    <property name="y" type="double">301.7647058823529</property>
+                </object>
+                </property>
+                <property name="[238]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1026.3088235294117</property>
+                    <property name="y" type="double">313.6764705882353</property>
+                </object>
+                </property>
+                <property name="[244]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1026.3088235294117</property>
+                    <property name="y" type="double">324.79411764705884</property>
+                </object>
+                </property>
+                <property name="[251]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1025.514705882353</property>
+                    <property name="y" type="double">339.88235294117646</property>
+                </object>
+                </property>
+                <property name="[256]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1023.3005893909626</property>
+                    <property name="y" type="double">347.2691552062868</property>
+                </object>
+                </property>
+                <property name="[263]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1023.3005893909626</property>
+                    <property name="y" type="double">362.1218074656188</property>
+                </object>
+                </property>
+                <property name="[270]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1023.9579914670168</property>
+                    <property name="y" type="double">374.9064653757796</property>
+                </object>
+                </property>
+                <property name="[277]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1020.9043659043659</property>
+                    <property name="y" type="double">389.56340956340955</property>
+                </object>
+                </property>
+                <property name="[283]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1023.1496881496881</property>
+                    <property name="y" type="double">400.7900207900208</property>
+                </object>
+                </property>
+                <property name="[289]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1023.1496881496881</property>
+                    <property name="y" type="double">413.70062370062374</property>
+                </object>
+                </property>
+                <property name="[294]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1022.027027027027</property>
+                    <property name="y" type="double">424.92723492723496</property>
+                </object>
+                </property>
+                <property name="[303]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1022.027027027027</property>
+                    <property name="y" type="double">437.2765072765073</property>
+                </object>
+                </property>
+                <property name="[310]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1023.149688149688</property>
+                    <property name="y" type="double">452.993762993763</property>
+                </object>
+                </property>
+                <property name="[317]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1024.2723492723494</property>
+                    <property name="y" type="double">470.3950103950104</property>
+                </object>
+                </property>
+                <property name="[324]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1023.9264705882351</property>
+                    <property name="y" type="double">483.61764705882354</property>
+                </object>
+                </property>
+                <property name="[327]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1023.0</property>
+                    <property name="y" type="double">489.5</property>
+                </object>
+                </property>
+            </property>
+            <property name="keyFrames" type="array" class="[I">
+                <property name="array" type="string">{144,153,161,168,175,182,190,197,204,211,218,225,231,238,244,251,256,263,270,277,283,289,294,303,310,317,324,327}</property>
+            </property>
+        </object>
+        </property>
+        <property name="item" type="object">
+        <object class="org.opensourcephysics.cabrillo.tracker.PointMass">
+            <property name="mass" type="double">1.0</property>
+            <property name="name" type="string">质量 C</property>
+            <property name="description" type="string">60</property>
+            <property name="color" type="object">
+            <object class="java.awt.Color">
+                <property name="red" type="int">255</property>
+                <property name="green" type="int">0</property>
+                <property name="blue" type="int">255</property>
+                <property name="alpha" type="int">255</property>
+            </object>
+            </property>
+            <property name="footprint" type="string">Footprint.Diamond</property>
+            <property name="visible" type="boolean">true</property>
+            <property name="trail" type="boolean">true</property>
+            <property name="framedata" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.PointMass$FrameData;">
+                <property name="[329]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1144.2436149312375</property>
+                    <property name="y" type="double">123.0648330058939</property>
+                </object>
+                </property>
+                <property name="[337]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1148.4872298624755</property>
+                    <property name="y" type="double">131.55206286836935</property>
+                </object>
+                </property>
+                <property name="[349]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1148.3264033264034</property>
+                    <property name="y" type="double">143.13929313929313</property>
+                </object>
+                </property>
+                <property name="[364]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1142.4754420432218</property>
+                    <property name="y" type="double">154.53831041257365</property>
+                </object>
+                </property>
+                <property name="[376]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1141.5904365904366</property>
+                    <property name="y" type="double">163.9085239085239</property>
+                </object>
+                </property>
+                <property name="[396]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1144.9614112458655</property>
+                    <property name="y" type="double">180.19845644983462</property>
+                </object>
+                </property>
+                <property name="[410]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1142.57993384785</property>
+                    <property name="y" type="double">196.07497243660418</property>
+                </object>
+                </property>
+                <property name="[428]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1142.1803895891308</property>
+                    <property name="y" type="double">209.3174005565559</property>
+                </object>
+                </property>
+                <property name="[445]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1134.8317526308952</property>
+                    <property name="y" type="double">229.55437183318176</property>
+                </object>
+                </property>
+                <property name="[462]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1132.8445475638052</property>
+                    <property name="y" type="double">248.54756380510437</property>
+                </object>
+                </property>
+                <property name="[478]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1132.8106073007039</property>
+                    <property name="y" type="double">264.6521525617941</property>
+                </object>
+                </property>
+                <property name="[493]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1134.125</property>
+                    <property name="y" type="double">279.75</property>
+                </object>
+                </property>
+                <property name="[510]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1130.0</property>
+                    <property name="y" type="double">295.25</property>
+                </object>
+                </property>
+                <property name="[527]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1134.5</property>
+                    <property name="y" type="double">310.75</property>
+                </object>
+                </property>
+                <property name="[544]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1135.0</property>
+                    <property name="y" type="double">324.0</property>
+                </object>
+                </property>
+                <property name="[564]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1135.8333333333333</property>
+                    <property name="y" type="double">343.0</property>
+                </object>
+                </property>
+                <property name="[577]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1134.5</property>
+                    <property name="y" type="double">352.75</property>
+                </object>
+                </property>
+                <property name="[592]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1132.0833333333333</property>
+                    <property name="y" type="double">364.8333333333333</property>
+                </object>
+                </property>
+                <property name="[609]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1132.1666666666667</property>
+                    <property name="y" type="double">378.0833333333333</property>
+                </object>
+                </property>
+                <property name="[628]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1130.4166666666667</property>
+                    <property name="y" type="double">395.5833333333333</property>
+                </object>
+                </property>
+                <property name="[633]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">1131.1666666666667</property>
+                    <property name="y" type="double">400.6666666666667</property>
+                </object>
+                </property>
+            </property>
+            <property name="keyFrames" type="array" class="[I">
+                <property name="array" type="string">{329,337,349,364,376,396,410,428,445,462,478,493,510,527,544,564,577,592,609,628,633}</property>
+            </property>
+        </object>
+        </property>
+        <property name="item" type="object">
+        <object class="org.opensourcephysics.cabrillo.tracker.PointMass">
+            <property name="mass" type="double">1.0</property>
+            <property name="name" type="string">质量 D</property>
+            <property name="description" type="string">77</property>
+            <property name="color" type="object">
+            <object class="java.awt.Color">
+                <property name="red" type="int">153</property>
+                <property name="green" type="int">153</property>
+                <property name="blue" type="int">255</property>
+                <property name="alpha" type="int">255</property>
+            </object>
+            </property>
+            <property name="footprint" type="string">Footprint.Diamond</property>
+            <property name="visible" type="boolean">true</property>
+            <property name="trail" type="boolean">true</property>
+            <property name="framedata" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.PointMass$FrameData;">
+                <property name="[129]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">902.5862785862786</property>
+                    <property name="y" type="double">297.5051975051975</property>
+                </object>
+                </property>
+                <property name="[140]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">902.5862785862786</property>
+                    <property name="y" type="double">304.80249480249483</property>
+                </object>
+                </property>
+                <property name="[151]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">895.620610194488</property>
+                    <property name="y" type="double">314.8573140381602</property>
+                </object>
+                </property>
+                <property name="[163]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">896.4711973166106</property>
+                    <property name="y" type="double">323.82674639054983</property>
+                </object>
+                </property>
+                <property name="[174]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">900.9241080635182</property>
+                    <property name="y" type="double">336.0940400082491</property>
+                </object>
+                </property>
+                <property name="[189]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">898.0794671566374</property>
+                    <property name="y" type="double">345.67937528709234</property>
+                </object>
+                </property>
+                <property name="[200]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">898.7593714192176</property>
+                    <property name="y" type="double">355.96333278769026</property>
+                </object>
+                </property>
+                <property name="[213]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">901.3333333333334</property>
+                    <property name="y" type="double">366.75</property>
+                </object>
+                </property>
+                <property name="[221]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">895.5833333333334</property>
+                    <property name="y" type="double">374.1666666666667</property>
+                </object>
+                </property>
+                <property name="[235]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">894.75</property>
+                    <property name="y" type="double">384.5833333333333</property>
+                </object>
+                </property>
+                <property name="[250]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">894.0833333333334</property>
+                    <property name="y" type="double">395.5</property>
+                </object>
+                </property>
+                <property name="[267]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">895.4166666666666</property>
+                    <property name="y" type="double">407.4166666666667</property>
+                </object>
+                </property>
+                <property name="[283]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">896.3333333333334</property>
+                    <property name="y" type="double">418.6666666666667</property>
+                </object>
+                </property>
+                <property name="[297]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">896.6666666666666</property>
+                    <property name="y" type="double">429.8333333333333</property>
+                </object>
+                </property>
+                <property name="[315]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">897.8333333333334</property>
+                    <property name="y" type="double">443.5</property>
+                </object>
+                </property>
+                <property name="[330]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">896.0833333333334</property>
+                    <property name="y" type="double">456.0</property>
+                </object>
+                </property>
+                <property name="[345]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">897.0</property>
+                    <property name="y" type="double">467.8333333333333</property>
+                </object>
+                </property>
+                <property name="[360]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">899.3333333333334</property>
+                    <property name="y" type="double">478.9166666666667</property>
+                </object>
+                </property>
+                <property name="[373]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">902.4166666666666</property>
+                    <property name="y" type="double">494.25</property>
+                </object>
+                </property>
+                <property name="[386]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">907.1666666666666</property>
+                    <property name="y" type="double">505.3333333333333</property>
+                </object>
+                </property>
+                <property name="[399]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">905.25</property>
+                    <property name="y" type="double">520.3333333333334</property>
+                </object>
+                </property>
+                <property name="[415]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">901.8333333333334</property>
+                    <property name="y" type="double">535.9166666666666</property>
+                </object>
+                </property>
+                <property name="[429]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">899.8333333333334</property>
+                    <property name="y" type="double">546.3333333333334</property>
+                </object>
+                </property>
+                <property name="[444]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">901.1666666666666</property>
+                    <property name="y" type="double">560.3333333333334</property>
+                </object>
+                </property>
+                <property name="[458]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">903.1666666666666</property>
+                    <property name="y" type="double">575.75</property>
+                </object>
+                </property>
+                <property name="[463]" type="object">
+                <object class="org.opensourcephysics.cabrillo.tracker.PointMass$FrameData">
+                    <property name="x" type="double">906.0833333333334</property>
+                    <property name="y" type="double">580.9166666666666</property>
+                </object>
+                </property>
+            </property>
+            <property name="keyFrames" type="array" class="[I">
+                <property name="array" type="string">{129,140,151,163,174,189,200,213,221,235,250,267,283,297,315,330,345,360,373,386,399,415,429,444,458,463}</property>
+            </property>
+        </object>
+        </property>
+    </property>
+    <property name="selectedtrack" type="string">质量 D</property>
+    <property name="dividers" type="array" class="[D">
+        <property name="array" type="string">{0.5955510616784631,0.525,1.0,0.41759352881698686}</property>
+    </property>
+    <property name="views" type="array" class="[[Lorg.opensourcephysics.cabrillo.tracker.TView;">
+        <property name="[0]" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TView;">
+            <property name="[0]" type="object">
+            <object class="org.opensourcephysics.cabrillo.tracker.PlotTView">
+                <property name="selected_track" type="string">质量 D</property>
+                <property name="track_views" type="collection" class="java.util.ArrayList">
+                    <property name="item" type="object">
+                    <object class="org.opensourcephysics.cabrillo.tracker.PlotTrackView">
+                        <property name="track" type="string">质量 A</property>
+                        <property name="plot0" type="object">
+                        <object class="org.opensourcephysics.cabrillo.tracker.TrackPlottingPanel">
+                            <property name="x_var" type="string">t</property>
+                            <property name="y_var" type="string">x</property>
+                            <property name="lines" type="boolean">true</property>
+                            <property name="points" type="boolean">true</property>
+                        </object>
+                        </property>
+                        <property name="plot1" type="object">
+                        <object class="org.opensourcephysics.cabrillo.tracker.TrackPlottingPanel">
+                            <property name="x_var" type="string">t</property>
+                            <property name="y_var" type="string">y</property>
+                            <property name="lines" type="boolean">true</property>
+                            <property name="points" type="boolean">true</property>
+                        </object>
+                        </property>
+                        <property name="linked" type="boolean">false</property>
+                    </object>
+                    </property>
+                    <property name="item" type="object">
+                    <object class="org.opensourcephysics.cabrillo.tracker.PlotTrackView">
+                        <property name="track" type="string">质量 D</property>
+                        <property name="plot0" type="object">
+                        <object class="org.opensourcephysics.cabrillo.tracker.TrackPlottingPanel">
+                            <property name="x_var" type="string">t</property>
+                            <property name="y_var" type="string">x</property>
+                            <property name="lines" type="boolean">true</property>
+                            <property name="points" type="boolean">true</property>
+                        </object>
+                        </property>
+                        <property name="plot1" type="object">
+                        <object class="org.opensourcephysics.cabrillo.tracker.TrackPlottingPanel">
+                            <property name="x_var" type="string">t</property>
+                            <property name="y_var" type="string">y</property>
+                            <property name="lines" type="boolean">true</property>
+                            <property name="points" type="boolean">true</property>
+                        </object>
+                        </property>
+                        <property name="linked" type="boolean">false</property>
+                    </object>
+                    </property>
+                    <property name="item" type="object">
+                    <object class="org.opensourcephysics.cabrillo.tracker.PlotTrackView">
+                        <property name="track" type="string">质量 C</property>
+                        <property name="plot0" type="object">
+                        <object class="org.opensourcephysics.cabrillo.tracker.TrackPlottingPanel">
+                            <property name="x_var" type="string">t</property>
+                            <property name="y_var" type="string">x</property>
+                            <property name="lines" type="boolean">true</property>
+                            <property name="points" type="boolean">true</property>
+                        </object>
+                        </property>
+                        <property name="plot1" type="object">
+                        <object class="org.opensourcephysics.cabrillo.tracker.TrackPlottingPanel">
+                            <property name="x_var" type="string">t</property>
+                            <property name="y_var" type="string">y</property>
+                            <property name="lines" type="boolean">true</property>
+                            <property name="points" type="boolean">true</property>
+                        </object>
+                        </property>
+                        <property name="linked" type="boolean">false</property>
+                    </object>
+                    </property>
+                    <property name="item" type="object">
+                    <object class="org.opensourcephysics.cabrillo.tracker.PlotTrackView">
+                        <property name="track" type="string">质量 B</property>
+                        <property name="plot0" type="object">
+                        <object class="org.opensourcephysics.cabrillo.tracker.TrackPlottingPanel">
+                            <property name="x_var" type="string">t</property>
+                            <property name="y_var" type="string">x</property>
+                            <property name="lines" type="boolean">true</property>
+                            <property name="points" type="boolean">true</property>
+                        </object>
+                        </property>
+                        <property name="plot1" type="object">
+                        <object class="org.opensourcephysics.cabrillo.tracker.TrackPlottingPanel">
+                            <property name="x_var" type="string">t</property>
+                            <property name="y_var" type="string">y</property>
+                            <property name="lines" type="boolean">true</property>
+                            <property name="points" type="boolean">true</property>
+                        </object>
+                        </property>
+                        <property name="linked" type="boolean">false</property>
+                    </object>
+                    </property>
+                </property>
+            </object>
+            </property>
+            <property name="[1]" type="object">
+            <object class="org.opensourcephysics.cabrillo.tracker.TableTView">
+                <property name="selected_track" type="string">质量 D</property>
+            </object>
+            </property>
+        </property>
+        <property name="[1]" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TView;">
+            <property name="[0]" type="object">
+            <object class="org.opensourcephysics.cabrillo.tracker.PlotTView">
+                <property name="selected_track" type="string">质量 D</property>
+            </object>
+            </property>
+            <property name="[1]" type="object">
+            <object class="org.opensourcephysics.cabrillo.tracker.TableTView">
+                <property name="selected_track" type="string">质量 D</property>
+            </object>
+            </property>
+        </property>
+        <property name="[2]" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TView;">
+            <property name="[0]" type="object">
+            <object class="org.opensourcephysics.cabrillo.tracker.PlotTView">
+                <property name="selected_track" type="string">质量 D</property>
+            </object>
+            </property>
+            <property name="[1]" type="object">
+            <object class="org.opensourcephysics.cabrillo.tracker.TableTView">
+                <property name="selected_track" type="string">质量 D</property>
+            </object>
+            </property>
+        </property>
+        <property name="[3]" type="array" class="[Lorg.opensourcephysics.cabrillo.tracker.TView;">
+            <property name="[0]" type="object">
+            <object class="org.opensourcephysics.cabrillo.tracker.PlotTView">
+                <property name="selected_track" type="string">质量 D</property>
+            </object>
+            </property>
+            <property name="[1]" type="object">
+            <object class="org.opensourcephysics.cabrillo.tracker.TableTView">
+                <property name="selected_track" type="string">质量 D</property>
+            </object>
+            </property>
+        </property>
+    </property>
+    <property name="selected_views" type="array" class="[Ljava.lang.String;">
+        <property name="[0]" type="string">图形视图</property>
+        <property name="[1]" type="string">表格视图</property>
+        <property name="[2]" type="string">全部视图</property>
+        <property name="[3]" type="string">页面视图</property>
+    </property>
+    <property name="toolbar" type="object">
+    <object class="org.opensourcephysics.cabrillo.tracker.TToolBar">
+        <property name="trace" type="boolean">false</property>
+        <property name="position" type="boolean">true</property>
+        <property name="velocity" type="boolean">false</property>
+        <property name="acceleration" type="boolean">false</property>
+        <property name="labels" type="boolean">true</property>
+        <property name="multiply_by_mass" type="boolean">false</property>
+        <property name="trail_length" type="int">15</property>
+        <property name="stretch" type="int">1</property>
+        <property name="stretch_acceleration" type="int">1</property>
+    </object>
+    </property>
+    <property name="datatool_tabs" type="array" class="[Lorg.opensourcephysics.tools.DataToolTab;">
+        <property name="[0]" type="object">
+        <object class="org.opensourcephysics.tools.DataToolTab">
+            <property name="name" type="string">质量_B</property>
+            <property name="owner_name" type="string">质量 B</property>
+            <property name="owned_columns" type="array" class="[[Ljava.lang.String;">
+                <property name="[0]" type="array" class="[Ljava.lang.String;">
+                    <property name="[0]" type="string">t</property>
+                    <property name="[1]" type="string">质量 B</property>
+                    <property name="[2]" type="string">x</property>
+                </property>
+                <property name="[1]" type="array" class="[Ljava.lang.String;">
+                    <property name="[0]" type="string">x</property>
+                    <property name="[1]" type="string">质量 B</property>
+                    <property name="[2]" type="string">x</property>
+                </property>
+                <property name="[2]" type="array" class="[Ljava.lang.String;">
+                    <property name="[0]" type="string">y</property>
+                    <property name="[1]" type="string">质量 B</property>
+                    <property name="[2]" type="string">y</property>
+                </property>
+            </property>
+            <property name="editable" type="boolean">false</property>
+            <property name="data" type="object">
+            <object class="org.opensourcephysics.display.DatasetManager">
+                <property name="connected" type="boolean">false</property>
+                <property name="sorted" type="boolean">false</property>
+                <property name="maker_shape" type="int">2</property>
+                <property name="stride" type="int">1</property>
+                <property name="linked" type="boolean">false</property>
+                <property name="x_column_name" type="string">x</property>
+                <property name="y_column_name" type="string">y</property>
+                <property name="data_name" type="string"></property>
+                <property name="datasets" type="collection" class="java.util.ArrayList">
+                    <property name="item" type="object">
+                    <object class="org.opensourcephysics.tools.DataColumn">
+                        <property name="points" type="array" class="[[D">
+                            <property name="array" type="string">{{0.0,0.0},{1.0,0.15},{2.0,0.28333333333333305},{3.0,0.4},{4.0,0.5166666666666665},{5.0,0.6333333333333331},{6.0,0.7666666666666665},{7.0,0.8833333333333331},{8.0,1.0},{9.0,1.1166666666666665},{10.0,1.2333333333333334},{11.0,1.35},{12.0,1.45},{13.0,1.5666666666666669},{14.0,1.6666666666666665},{15.0,1.7833333333333339},{16.0,1.866666666666667},{17.0,1.983333333333333},{18.0,2.1},{19.0,2.216666666666666},{20.0,2.316666666666667},{21.0,2.416666666666666},{22.0,2.5},{23.0,2.65},{24.0,2.766666666666667},{25.0,2.883333333333333},{26.0,3.0},{27.0,3.05}}</property>
+                        </property>
+                        <property name="index" type="int">28</property>
+                        <property name="marker_shape" type="int">2</property>
+                        <property name="marker_size" type="int">2</property>
+                        <property name="sorted" type="boolean">false</property>
+                        <property name="connected" type="boolean">false</property>
+                        <property name="x_name" type="string">row</property>
+                        <property name="y_name" type="string">t</property>
+                        <property name="line_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">0</property>
+                            <property name="alpha" type="int">255</property>
+                        </object>
+                        </property>
+                        <property name="fill_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">0</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="edge_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">0</property>
+                            <property name="alpha" type="int">255</property>
+                        </object>
+                        </property>
+                        <property name="errorbar_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">0</property>
+                            <property name="alpha" type="int">255</property>
+                        </object>
+                        </property>
+                        <property name="datasetID" type="int">32877617</property>
+                        <property name="visible" type="array" class="[Z">
+                            <property name="array" type="string">{false,true}</property>
+                        </property>
+                    </object>
+                    </property>
+                    <property name="item" type="object">
+                    <object class="org.opensourcephysics.tools.DataColumn">
+                        <property name="points" type="array" class="[[D">
+                            <property name="array" type="string">{{0.0,-5.421010862427522E-20},{1.0,4.053604682069682E-5},{2.0,6.924907998535706E-5},{3.0,9.289510729743023E-5},{4.0,1.300531502164023E-4},{5.0,1.5876618338106252E-4},{6.0,1.874792165457228E-4},{7.0,2.1957025361210776E-4},{8.0,2.449052828750433E-4},{9.0,2.7699631994142833E-4},{10.0,3.0233134920436375E-4},{11.0,3.344223862707488E-4},{12.0,3.614464174845467E-4},{13.0,3.867814467474822E-4},{14.0,4.104274740595554E-4},{15.0,4.425185111259403E-4},{16.0,4.582294369347478E-4},{17.0,4.898194144832933E-4},{18.0,5.17010992747981E-4},{19.0,5.481847204925731E-4},{20.0,5.720625027500868E-4},{21.0,5.995219523462277E-4},{22.0,6.233997346037414E-4},{23.0,6.496652950870065E-4},{24.0,6.830941902475257E-4},{25.0,7.201047527466719E-4},{26.0,7.48227864232029E-4},{27.0,7.607389897939724E-4}}</property>
+                        </property>
+                        <property name="index" type="int">28</property>
+                        <property name="marker_shape" type="int">2</property>
+                        <property name="marker_size" type="int">2</property>
+                        <property name="sorted" type="boolean">false</property>
+                        <property name="connected" type="boolean">false</property>
+                        <property name="x_name" type="string">row</property>
+                        <property name="y_name" type="string">x</property>
+                        <property name="line_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">178</property>
+                            <property name="blue" type="int">178</property>
+                            <property name="alpha" type="int">255</property>
+                        </object>
+                        </property>
+                        <property name="fill_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">255</property>
+                            <property name="blue" type="int">255</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="edge_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">255</property>
+                            <property name="blue" type="int">255</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="errorbar_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">255</property>
+                            <property name="blue" type="int">255</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="datasetID" type="int">32877617</property>
+                        <property name="visible" type="array" class="[Z">
+                            <property name="array" type="string">{false,true}</property>
+                        </property>
+                    </object>
+                    </property>
+                    <property name="item" type="object">
+                    <object class="org.opensourcephysics.tools.DataColumn">
+                        <property name="points" type="array" class="[[D">
+                            <property name="array" type="string">{{0.0,-1.6890019508626793E-6},{1.0,1.6890019508622456E-6},{2.0,3.378003901724491E-6},{3.0,1.6890019508622456E-6},{4.0,-1.6890019508626793E-6},{5.0,-3.378003901724925E-6},{6.0,0.0},{7.0,-8.445009754312095E-6},{8.0,-8.445009754312095E-6},{9.0,-3.378003901724925E-6},{10.0,-1.0134011705174775E-5},{11.0,-5.0670058525871704E-6},{12.0,-1.0134011705174341E-5},{13.0,-5.0670058525871704E-6},{14.0,-5.0670058525871704E-6},{15.0,-6.75600780344985E-6},{16.0,-1.1465193006983659E-5},{17.0,-1.1465193006983659E-5},{18.0,-1.0066970220890589E-5},{19.0,-1.6561700002582815E-5},{20.0,-1.1786143551080486E-5},{21.0,-1.1786143551080486E-5},{22.0,-1.417392177683165E-5},{23.0,-1.417392177683165E-5},{24.0,-1.1786143551080486E-5},{25.0,-9.398365325328454E-6},{26.0,-1.0134011705174775E-5},{27.0,-1.2104513981180294E-5}}</property>
+                        </property>
+                        <property name="index" type="int">28</property>
+                        <property name="marker_shape" type="int">2</property>
+                        <property name="marker_size" type="int">2</property>
+                        <property name="sorted" type="boolean">false</property>
+                        <property name="connected" type="boolean">true</property>
+                        <property name="x_name" type="string">row</property>
+                        <property name="y_name" type="string">y</property>
+                        <property name="line_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">178</property>
+                            <property name="blue" type="int">178</property>
+                            <property name="alpha" type="int">255</property>
+                        </object>
+                        </property>
+                        <property name="fill_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">255</property>
+                            <property name="blue" type="int">255</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="edge_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">255</property>
+                            <property name="blue" type="int">255</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="errorbar_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">255</property>
+                            <property name="blue" type="int">255</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="datasetID" type="int">24484526</property>
+                        <property name="visible" type="array" class="[Z">
+                            <property name="array" type="string">{false,true}</property>
+                        </property>
+                    </object>
+                    </property>
+                </property>
+                <property name="id" type="int">10005225</property>
+            </object>
+            </property>
+            <property name="fits" type="collection" class="java.util.ArrayList">
+                <property name="item" type="object">
+                <object class="org.opensourcephysics.tools.FitFunctionPanel">
+                    <property name="name" type="string">Poly1</property>
+                    <property name="description" type="string">y = A*x + B</property>
+                    <property name="user_parameters" type="array" class="[Lorg.opensourcephysics.tools.Parameter;">
+                        <property name="[0]" type="object">
+                        <object class="org.opensourcephysics.tools.Parameter">
+                            <property name="name" type="string">A</property>
+                            <property name="function" type="string">0.0</property>
+                            <property name="editable" type="boolean">true</property>
+                            <property name="name_editable" type="boolean">true</property>
+                            <property name="description" type="string">Slope</property>
+                        </object>
+                        </property>
+                        <property name="[1]" type="object">
+                        <object class="org.opensourcephysics.tools.Parameter">
+                            <property name="name" type="string">B</property>
+                            <property name="function" type="string">0.0</property>
+                            <property name="editable" type="boolean">true</property>
+                            <property name="name_editable" type="boolean">true</property>
+                            <property name="description" type="string">Vertical intercept</property>
+                        </object>
+                        </property>
+                    </property>
+                    <property name="function_editor" type="object">
+                    <object class="org.opensourcephysics.tools.UserFunctionEditor">
+                        <property name="main_functions" type="array" class="[Lorg.opensourcephysics.tools.UserFunction;">
+                            <property name="[0]" type="object">
+                            <object class="org.opensourcephysics.tools.UserFunction">
+                                <property name="name" type="string">Poly1</property>
+                                <property name="description" type="string">Polynomial, degree 1</property>
+                                <property name="name_editable" type="boolean">true</property>
+                                <property name="parameter_names" type="array" class="[Ljava.lang.String;">
+                                    <property name="[0]" type="string">A</property>
+                                    <property name="[1]" type="string">B</property>
+                                </property>
+                                <property name="parameter_values" type="array" class="[D">
+                                    <property name="array" type="string">{0.0,0.0}</property>
+                                </property>
+                                <property name="parameter_descriptions" type="array" class="[Ljava.lang.String;">
+                                    <property name="[0]" type="string">Slope</property>
+                                    <property name="[1]" type="string">Vertical intercept</property>
+                                </property>
+                                <property name="variables" type="array" class="[Ljava.lang.String;">
+                                    <property name="[0]" type="string">x</property>
+                                </property>
+                                <property name="expression" type="string">A*x + B</property>
+                                <property name="polynomial" type="array" class="[D">
+                                    <property name="array" type="string">{0.0,0.0}</property>
+                                </property>
+                            </object>
+                            </property>
+                        </property>
+                    </object>
+                    </property>
+                    <property name="original_name" type="string">Poly1</property>
+                </object>
+                </property>
+            </property>
+            <property name="selected_fit" type="string">Poly1</property>
+            <property name="autofit" type="boolean">false</property>
+            <property name="fit_parameters" type="array" class="[D">
+                <property name="array" type="string">{9.678251028013453E-7,-1.2800847266905824E-5}</property>
+            </property>
+            <property name="fit_color" type="object">
+            <object class="java.awt.Color">
+                <property name="red" type="int">255</property>
+                <property name="green" type="int">0</property>
+                <property name="blue" type="int">255</property>
+                <property name="alpha" type="int">255</property>
+            </object>
+            </property>
+            <property name="fit_visible" type="boolean">true</property>
+            <property name="props_visible" type="boolean">true</property>
+            <property name="stats_visible" type="boolean">false</property>
+            <property name="split_pane" type="int">530</property>
+            <property name="fit_split_pane" type="int">523</property>
+            <property name="column_order" type="array" class="[I">
+                <property name="array" type="string">{0,1,2,3}</property>
+            </property>
+            <property name="hidden_markers" type="array" class="[Ljava.lang.String;"/>
+        </object>
+        </property>
+        <property name="[1]" type="object">
+        <object class="org.opensourcephysics.tools.DataToolTab">
+            <property name="name" type="string">质量_C</property>
+            <property name="owner_name" type="string">质量 C</property>
+            <property name="owned_columns" type="array" class="[[Ljava.lang.String;">
+                <property name="[0]" type="array" class="[Ljava.lang.String;">
+                    <property name="[0]" type="string">t</property>
+                    <property name="[1]" type="string">质量 C</property>
+                    <property name="[2]" type="string">x</property>
+                </property>
+                <property name="[1]" type="array" class="[Ljava.lang.String;">
+                    <property name="[0]" type="string">x</property>
+                    <property name="[1]" type="string">质量 C</property>
+                    <property name="[2]" type="string">x</property>
+                </property>
+                <property name="[2]" type="array" class="[Ljava.lang.String;">
+                    <property name="[0]" type="string">y</property>
+                    <property name="[1]" type="string">质量 C</property>
+                    <property name="[2]" type="string">y</property>
+                </property>
+            </property>
+            <property name="editable" type="boolean">false</property>
+            <property name="data" type="object">
+            <object class="org.opensourcephysics.display.DatasetManager">
+                <property name="connected" type="boolean">false</property>
+                <property name="sorted" type="boolean">false</property>
+                <property name="maker_shape" type="int">2</property>
+                <property name="stride" type="int">1</property>
+                <property name="linked" type="boolean">false</property>
+                <property name="x_column_name" type="string">x</property>
+                <property name="y_column_name" type="string">y</property>
+                <property name="data_name" type="string"></property>
+                <property name="datasets" type="collection" class="java.util.ArrayList">
+                    <property name="item" type="object">
+                    <object class="org.opensourcephysics.tools.DataColumn">
+                        <property name="points" type="array" class="[[D">
+                            <property name="array" type="string">{{0.0,0.0},{1.0,0.2666666666666679},{2.0,0.6666666666666679},{3.0,1.1666666666666679},{4.0,1.566666666666668},{5.0,2.2333333333333356},{6.0,2.700000000000002},{7.0,3.3000000000000016},{8.0,3.866666666666668},{9.0,4.433333333333334},{10.0,4.966666666666668},{11.0,5.466666666666666},{12.0,6.033333333333334},{13.0,6.600000000000001},{14.0,7.166666666666666},{15.0,7.833333333333334},{16.0,8.26666666666667},{17.0,8.76666666666667},{18.0,9.33366666666667},{19.0,9.967000000000002},{20.0,10.134000000000002}}</property>
+                        </property>
+                        <property name="index" type="int">21</property>
+                        <property name="marker_shape" type="int">2</property>
+                        <property name="marker_size" type="int">2</property>
+                        <property name="sorted" type="boolean">false</property>
+                        <property name="connected" type="boolean">false</property>
+                        <property name="x_name" type="string">row</property>
+                        <property name="y_name" type="string">t</property>
+                        <property name="line_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">0</property>
+                            <property name="alpha" type="int">255</property>
+                        </object>
+                        </property>
+                        <property name="fill_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">0</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="edge_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">0</property>
+                            <property name="alpha" type="int">255</property>
+                        </object>
+                        </property>
+                        <property name="errorbar_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">0</property>
+                            <property name="alpha" type="int">255</property>
+                        </object>
+                        </property>
+                        <property name="datasetID" type="int">5783840</property>
+                        <property name="visible" type="array" class="[Z">
+                            <property name="array" type="string">{false,true}</property>
+                        </property>
+                    </object>
+                    </property>
+                    <property name="item" type="object">
+                    <object class="org.opensourcephysics.tools.DataColumn">
+                        <property name="points" type="array" class="[[D">
+                            <property name="array" type="string">{{0.0,-1.5042846451687546E-6},{1.0,1.654713109685733E-5},{2.0,4.119191087875284E-5},{3.0,6.54363820648446E-5},{4.0,8.536580805515323E-5},{5.0,1.2001272459654088E-4},{6.0,1.5378034904597594E-4},{7.0,1.8194555480810948E-4},{8.0,2.2498739387611207E-4},{9.0,2.653838495051915E-4},{10.0,2.996365599551209E-4},{11.0,3.317480410075792E-4},{12.0,3.6471485686330024E-4},{13.0,3.9768167271902127E-4},{14.0,4.2586298304729883E-4},{15.0,4.6627391861237623E-4},{16.0,4.8701110923129754E-4},{17.0,5.12711046323123E-4},{18.0,5.408923566514008E-4},{19.0,5.781129551981825E-4},{20.0,5.889246528712954E-4}}</property>
+                        </property>
+                        <property name="index" type="int">21</property>
+                        <property name="marker_shape" type="int">2</property>
+                        <property name="marker_size" type="int">2</property>
+                        <property name="sorted" type="boolean">false</property>
+                        <property name="connected" type="boolean">false</property>
+                        <property name="x_name" type="string">row</property>
+                        <property name="y_name" type="string">x</property>
+                        <property name="line_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">178</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">178</property>
+                            <property name="alpha" type="int">255</property>
+                        </object>
+                        </property>
+                        <property name="fill_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">255</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">255</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="edge_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">255</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">255</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="errorbar_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">255</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">255</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="datasetID" type="int">5783840</property>
+                        <property name="visible" type="array" class="[Z">
+                            <property name="array" type="string">{false,true}</property>
+                        </property>
+                    </object>
+                    </property>
+                    <property name="item" type="object">
+                    <object class="org.opensourcephysics.tools.DataColumn">
+                        <property name="points" type="array" class="[[D">
+                            <property name="array" type="string">{{0.0,-1.5042846451688088E-6},{1.0,7.521423225844478E-6},{2.0,7.179362658141317E-6},{3.0,-5.264996258090831E-6},{4.0,-7.14730669636697E-6},{5.0,2.2390124266788436E-8},{6.0,-5.0427535431482595E-6},{7.0,-5.892540769175062E-6},{8.0,-2.1522293117090877E-5},{9.0,-2.574886237607845E-5},{10.0,-2.5821049627933797E-5},{11.0,-2.302547917117266E-5},{12.0,-3.1798905971485315E-5},{13.0,-2.2227894916598823E-5},{14.0,-2.1164449243833705E-5},{15.0,-1.9392039789224887E-5},{16.0,-2.2227894916598823E-5},{17.0,-2.7367882334964136E-5},{18.0,-2.7190641389502994E-5},{19.0,-3.0912701244180905E-5},{20.0,-2.931753273503323E-5}}</property>
+                        </property>
+                        <property name="index" type="int">21</property>
+                        <property name="marker_shape" type="int">2</property>
+                        <property name="marker_size" type="int">2</property>
+                        <property name="sorted" type="boolean">false</property>
+                        <property name="connected" type="boolean">true</property>
+                        <property name="x_name" type="string">row</property>
+                        <property name="y_name" type="string">y</property>
+                        <property name="line_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">178</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">178</property>
+                            <property name="alpha" type="int">255</property>
+                        </object>
+                        </property>
+                        <property name="fill_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">255</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">255</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="edge_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">255</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">255</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="errorbar_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">255</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">255</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="datasetID" type="int">32039107</property>
+                        <property name="visible" type="array" class="[Z">
+                            <property name="array" type="string">{false,true}</property>
+                        </property>
+                    </object>
+                    </property>
+                </property>
+                <property name="id" type="int">7585306</property>
+            </object>
+            </property>
+            <property name="fits" type="collection" class="java.util.ArrayList">
+                <property name="item" type="object">
+                <object class="org.opensourcephysics.tools.FitFunctionPanel">
+                    <property name="name" type="string">Poly1</property>
+                    <property name="description" type="string">y = A*x + B</property>
+                    <property name="user_parameters" type="array" class="[Lorg.opensourcephysics.tools.Parameter;">
+                        <property name="[0]" type="object">
+                        <object class="org.opensourcephysics.tools.Parameter">
+                            <property name="name" type="string">A</property>
+                            <property name="function" type="string">0.0</property>
+                            <property name="editable" type="boolean">true</property>
+                            <property name="name_editable" type="boolean">true</property>
+                            <property name="description" type="string">Slope</property>
+                        </object>
+                        </property>
+                        <property name="[1]" type="object">
+                        <object class="org.opensourcephysics.tools.Parameter">
+                            <property name="name" type="string">B</property>
+                            <property name="function" type="string">0.0</property>
+                            <property name="editable" type="boolean">true</property>
+                            <property name="name_editable" type="boolean">true</property>
+                            <property name="description" type="string">Vertical intercept</property>
+                        </object>
+                        </property>
+                    </property>
+                    <property name="function_editor" type="object">
+                    <object class="org.opensourcephysics.tools.UserFunctionEditor">
+                        <property name="main_functions" type="array" class="[Lorg.opensourcephysics.tools.UserFunction;">
+                            <property name="[0]" type="object">
+                            <object class="org.opensourcephysics.tools.UserFunction">
+                                <property name="name" type="string">Poly1</property>
+                                <property name="description" type="string">Polynomial, degree 1</property>
+                                <property name="name_editable" type="boolean">true</property>
+                                <property name="parameter_names" type="array" class="[Ljava.lang.String;">
+                                    <property name="[0]" type="string">A</property>
+                                    <property name="[1]" type="string">B</property>
+                                </property>
+                                <property name="parameter_values" type="array" class="[D">
+                                    <property name="array" type="string">{0.0,0.0}</property>
+                                </property>
+                                <property name="parameter_descriptions" type="array" class="[Ljava.lang.String;">
+                                    <property name="[0]" type="string">Slope</property>
+                                    <property name="[1]" type="string">Vertical intercept</property>
+                                </property>
+                                <property name="variables" type="array" class="[Ljava.lang.String;">
+                                    <property name="[0]" type="string">x</property>
+                                </property>
+                                <property name="expression" type="string">A*x + B</property>
+                                <property name="polynomial" type="array" class="[D">
+                                    <property name="array" type="string">{0.0,0.0}</property>
+                                </property>
+                            </object>
+                            </property>
+                        </property>
+                    </object>
+                    </property>
+                    <property name="original_name" type="string">Poly1</property>
+                </object>
+                </property>
+            </property>
+            <property name="selected_fit" type="string">Poly1</property>
+            <property name="autofit" type="boolean">false</property>
+            <property name="fit_parameters" type="array" class="[D">
+                <property name="array" type="string">{9.678251028013453E-7,-1.2800847266905824E-5}</property>
+            </property>
+            <property name="fit_color" type="object">
+            <object class="java.awt.Color">
+                <property name="red" type="int">255</property>
+                <property name="green" type="int">0</property>
+                <property name="blue" type="int">255</property>
+                <property name="alpha" type="int">255</property>
+            </object>
+            </property>
+            <property name="fit_visible" type="boolean">true</property>
+            <property name="props_visible" type="boolean">true</property>
+            <property name="stats_visible" type="boolean">false</property>
+            <property name="split_pane" type="int">540</property>
+            <property name="fit_split_pane" type="int">523</property>
+            <property name="column_order" type="array" class="[I">
+                <property name="array" type="string">{0,1,2,3}</property>
+            </property>
+            <property name="hidden_markers" type="array" class="[Ljava.lang.String;"/>
+        </object>
+        </property>
+        <property name="[2]" type="object">
+        <object class="org.opensourcephysics.tools.DataToolTab">
+            <property name="name" type="string">质量_D</property>
+            <property name="owner_name" type="string">质量 D</property>
+            <property name="owned_columns" type="array" class="[[Ljava.lang.String;">
+                <property name="[0]" type="array" class="[Ljava.lang.String;">
+                    <property name="[0]" type="string">t</property>
+                    <property name="[1]" type="string">质量 D</property>
+                    <property name="[2]" type="string">x</property>
+                </property>
+                <property name="[1]" type="array" class="[Ljava.lang.String;">
+                    <property name="[0]" type="string">x</property>
+                    <property name="[1]" type="string">质量 D</property>
+                    <property name="[2]" type="string">x</property>
+                </property>
+                <property name="[2]" type="array" class="[Ljava.lang.String;">
+                    <property name="[0]" type="string">y</property>
+                    <property name="[1]" type="string">质量 D</property>
+                    <property name="[2]" type="string">y</property>
+                </property>
+            </property>
+            <property name="editable" type="boolean">false</property>
+            <property name="data" type="object">
+            <object class="org.opensourcephysics.display.DatasetManager">
+                <property name="connected" type="boolean">false</property>
+                <property name="sorted" type="boolean">false</property>
+                <property name="maker_shape" type="int">2</property>
+                <property name="stride" type="int">1</property>
+                <property name="linked" type="boolean">false</property>
+                <property name="x_column_name" type="string">x</property>
+                <property name="y_column_name" type="string">y</property>
+                <property name="data_name" type="string"></property>
+                <property name="datasets" type="collection" class="java.util.ArrayList">
+                    <property name="item" type="object">
+                    <object class="org.opensourcephysics.tools.DataColumn">
+                        <property name="points" type="array" class="[[D">
+                            <property name="array" type="string">{{0.0,0.0},{1.0,0.366666666666667},{2.0,0.7333333333333331},{3.0,1.133333333333334},{4.0,1.5000000000000009},{5.0,2.000000000000001},{6.0,2.366666666666667},{7.0,2.8000000000000007},{8.0,3.066666666666667},{9.0,3.533333333333334},{10.0,4.033333333333334},{11.0,4.6},{12.0,5.133333333333334},{13.0,5.6},{14.0,6.2},{15.0,6.7},{16.0,7.2},{17.0,7.7},{18.0,8.133333333333335},{19.0,8.566666666666668},{20.0,9.0},{21.0,9.533333333333333},{22.0,10.0},{23.0,10.5},{24.0,10.966666666666669},{25.0,11.133333333333335}}</property>
+                        </property>
+                        <property name="index" type="int">26</property>
+                        <property name="marker_shape" type="int">2</property>
+                        <property name="marker_size" type="int">2</property>
+                        <property name="sorted" type="boolean">false</property>
+                        <property name="connected" type="boolean">false</property>
+                        <property name="x_name" type="string">row</property>
+                        <property name="y_name" type="string">t</property>
+                        <property name="line_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">0</property>
+                            <property name="alpha" type="int">255</property>
+                        </object>
+                        </property>
+                        <property name="fill_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">0</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="edge_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">0</property>
+                            <property name="alpha" type="int">255</property>
+                        </object>
+                        </property>
+                        <property name="errorbar_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">0</property>
+                            <property name="green" type="int">0</property>
+                            <property name="blue" type="int">0</property>
+                            <property name="alpha" type="int">255</property>
+                        </object>
+                        </property>
+                        <property name="datasetID" type="int">12582707</property>
+                        <property name="visible" type="array" class="[Z">
+                            <property name="array" type="string">{false,true}</property>
+                        </property>
+                    </object>
+                    </property>
+                    <property name="item" type="object">
+                    <object class="org.opensourcephysics.tools.DataColumn">
+                        <property name="points" type="array" class="[[D">
+                            <property name="array" type="string">{{0.0,1.074500201588154E-6},{1.0,1.659505866897224E-5},{2.0,3.798056668218139E-5},{3.0,5.7057574726799144E-5},{4.0,8.314877535536391E-5},{5.0,1.0353574200394275E-4},{6.0,1.2540860220976678E-4},{7.0,1.4835067135074475E-4},{8.0,1.6412511549676189E-4},{9.0,1.8628023367936995E-4},{10.0,2.0949879753474345E-4},{11.0,2.348442527356473E-4},{12.0,2.587717803728642E-4},{13.0,2.8252206706462003E-4},{14.0,3.115895821202021E-4},{15.0,3.38175723939332E-4},{16.0,3.6334393819477493E-4},{17.0,3.869169839410702E-4},{18.0,4.1952931790586935E-4},{19.0,4.431023636521646E-4},{20.0,4.750057338351205E-4},{21.0,5.081497906363023E-4},{22.0,5.303049088189105E-4},{23.0,5.60081387656336E-4},{24.0,5.928709625665961E-4},{25.0,6.038599011851698E-4}}</property>
+                        </property>
+                        <property name="index" type="int">26</property>
+                        <property name="marker_shape" type="int">2</property>
+                        <property name="marker_size" type="int">2</property>
+                        <property name="sorted" type="boolean">false</property>
+                        <property name="connected" type="boolean">false</property>
+                        <property name="x_name" type="string">row</property>
+                        <property name="y_name" type="string">x</property>
+                        <property name="line_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">107</property>
+                            <property name="green" type="int">107</property>
+                            <property name="blue" type="int">178</property>
+                            <property name="alpha" type="int">255</property>
+                        </object>
+                        </property>
+                        <property name="fill_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">153</property>
+                            <property name="green" type="int">153</property>
+                            <property name="blue" type="int">255</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="edge_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">153</property>
+                            <property name="green" type="int">153</property>
+                            <property name="blue" type="int">255</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="errorbar_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">153</property>
+                            <property name="green" type="int">153</property>
+                            <property name="blue" type="int">255</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="datasetID" type="int">12582707</property>
+                        <property name="visible" type="array" class="[Z">
+                            <property name="array" type="string">{false,true}</property>
+                        </property>
+                    </object>
+                    </property>
+                    <property name="item" type="object">
+                    <object class="org.opensourcephysics.tools.DataColumn">
+                        <property name="points" type="array" class="[[D">
+                            <property name="array" type="string">{{0.0,-8.799404943044681E-7},{1.0,-8.799404943044681E-7},{2.0,-1.5695160312638413E-5},{3.0,-1.3886053923976242E-5},{4.0,-4.415196593959012E-6},{5.0,-1.0465438719945656E-5},{6.0,-9.019356228074683E-6},{7.0,-3.5448189092169863E-6},{8.0,-1.5774444146016706E-5},{9.0,-1.7546853600625524E-5},{10.0,-1.8964781164312276E-5},{11.0,-1.6128926036938556E-5},{12.0,-1.4179275636868813E-5},{13.0,-1.3470311855025546E-5},{14.0,-1.0988938618573243E-5},{15.0,-1.4710998473251588E-5},{16.0,-1.2761348073182062E-5},{17.0,-7.798601600277674E-6},{18.0,-1.240686618225826E-6},{19.0,8.862047273043442E-6},{20.0,4.78550552744368E-6},{21.0,-2.4813732364518688E-6},{22.0,-6.735155927512556E-6},{23.0,-3.899300800138837E-6},{24.0,3.544818909218504E-7},{25.0,6.557914982052281E-6}}</property>
+                        </property>
+                        <property name="index" type="int">26</property>
+                        <property name="marker_shape" type="int">2</property>
+                        <property name="marker_size" type="int">2</property>
+                        <property name="sorted" type="boolean">false</property>
+                        <property name="connected" type="boolean">true</property>
+                        <property name="x_name" type="string">row</property>
+                        <property name="y_name" type="string">y</property>
+                        <property name="line_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">107</property>
+                            <property name="green" type="int">107</property>
+                            <property name="blue" type="int">178</property>
+                            <property name="alpha" type="int">255</property>
+                        </object>
+                        </property>
+                        <property name="fill_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">153</property>
+                            <property name="green" type="int">153</property>
+                            <property name="blue" type="int">255</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="edge_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">153</property>
+                            <property name="green" type="int">153</property>
+                            <property name="blue" type="int">255</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="errorbar_color" type="object">
+                        <object class="java.awt.Color">
+                            <property name="red" type="int">153</property>
+                            <property name="green" type="int">153</property>
+                            <property name="blue" type="int">255</property>
+                            <property name="alpha" type="int">100</property>
+                        </object>
+                        </property>
+                        <property name="datasetID" type="int">12757414</property>
+                        <property name="visible" type="array" class="[Z">
+                            <property name="array" type="string">{false,true}</property>
+                        </property>
+                    </object>
+                    </property>
+                </property>
+                <property name="id" type="int">27040394</property>
+            </object>
+            </property>
+            <property name="fits" type="collection" class="java.util.ArrayList">
+                <property name="item" type="object">
+                <object class="org.opensourcephysics.tools.FitFunctionPanel">
+                    <property name="name" type="string">Poly1</property>
+                    <property name="description" type="string">y = A*x + B</property>
+                    <property name="user_parameters" type="array" class="[Lorg.opensourcephysics.tools.Parameter;">
+                        <property name="[0]" type="object">
+                        <object class="org.opensourcephysics.tools.Parameter">
+                            <property name="name" type="string">A</property>
+                            <property name="function" type="string">0.0</property>
+                            <property name="editable" type="boolean">true</property>
+                            <property name="name_editable" type="boolean">true</property>
+                            <property name="description" type="string">Slope</property>
+                        </object>
+                        </property>
+                        <property name="[1]" type="object">
+                        <object class="org.opensourcephysics.tools.Parameter">
+                            <property name="name" type="string">B</property>
+                            <property name="function" type="string">0.0</property>
+                            <property name="editable" type="boolean">true</property>
+                            <property name="name_editable" type="boolean">true</property>
+                            <property name="description" type="string">Vertical intercept</property>
+                        </object>
+                        </property>
+                    </property>
+                    <property name="function_editor" type="object">
+                    <object class="org.opensourcephysics.tools.UserFunctionEditor">
+                        <property name="main_functions" type="array" class="[Lorg.opensourcephysics.tools.UserFunction;">
+                            <property name="[0]" type="object">
+                            <object class="org.opensourcephysics.tools.UserFunction">
+                                <property name="name" type="string">Poly1</property>
+                                <property name="description" type="string">Polynomial, degree 1</property>
+                                <property name="name_editable" type="boolean">true</property>
+                                <property name="parameter_names" type="array" class="[Ljava.lang.String;">
+                                    <property name="[0]" type="string">A</property>
+                                    <property name="[1]" type="string">B</property>
+                                </property>
+                                <property name="parameter_values" type="array" class="[D">
+                                    <property name="array" type="string">{0.0,0.0}</property>
+                                </property>
+                                <property name="parameter_descriptions" type="array" class="[Ljava.lang.String;">
+                                    <property name="[0]" type="string">Slope</property>
+                                    <property name="[1]" type="string">Vertical intercept</property>
+                                </property>
+                                <property name="variables" type="array" class="[Ljava.lang.String;">
+                                    <property name="[0]" type="string">x</property>
+                                </property>
+                                <property name="expression" type="string">A*x + B</property>
+                                <property name="polynomial" type="array" class="[D">
+                                    <property name="array" type="string">{0.0,0.0}</property>
+                                </property>
+                            </object>
+                            </property>
+                        </property>
+                    </object>
+                    </property>
+                    <property name="original_name" type="string">Poly1</property>
+                </object>
+                </property>
+            </property>
+            <property name="selected_fit" type="string">Poly1</property>
+            <property name="autofit" type="boolean">false</property>
+            <property name="fit_parameters" type="array" class="[D">
+                <property name="array" type="string">{9.678251028013453E-7,-1.2800847266905824E-5}</property>
+            </property>
+            <property name="fit_color" type="object">
+            <object class="java.awt.Color">
+                <property name="red" type="int">255</property>
+                <property name="green" type="int">0</property>
+                <property name="blue" type="int">255</property>
+                <property name="alpha" type="int">255</property>
+            </object>
+            </property>
+            <property name="fit_visible" type="boolean">true</property>
+            <property name="props_visible" type="boolean">true</property>
+            <property name="stats_visible" type="boolean">false</property>
+            <property name="split_pane" type="int">530</property>
+            <property name="fit_split_pane" type="int">523</property>
+            <property name="column_order" type="array" class="[I">
+                <property name="array" type="string">{0,1,2,3}</property>
+            </property>
+            <property name="hidden_markers" type="array" class="[Ljava.lang.String;"/>
+        </object>
+        </property>
+    </property>
+</object>
